@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# 开始创建React应用程序
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+这个项目是由[Create React App](https://github.com/facebook/create-react-app)引导的。
 
-## Available Scripts
+## 可用脚本&高级用法
 
-In the project directory, you can run:
+本节已移动到这里:[Create React Apps手册](https://github.com/ahutCnRui/project-readme-file/blob/main/src/react-app-create.readme.md)
 
-### `npm start`
+# 工程结构说明 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+|── config                  ：npm ejec 生成的配置目录config，包含jest，webpack配置  
+|  |── jest                 ：   npm ejec 生成的配置目录，jest配置  
+|  |── webpack              ：	  npm ejec 生成的配置目录，webpack 配置  
+|      |── persistentCache  ：npm ejec 生成的配置目录，持久缓存 配置  
+|── public                  ：create-react-app 初始化生成的 公共文件目录  
+|── scripts                 ：npm ejec 生成的配置目录 脚本，可进行自定义修改  
+|── src                     ：create-react-app 初始化生成的 源文件目录  
+    |── common              ：	开发公共包  
+    |  |── components       ：	公共组件包  
+    |  |── hooks            ：	公共组件hooks 函数钩子  
+    |  |── utils            ：	工具包  
+    |── home                ：首页  
+    |── pages               ：页面开发  
+    |── router              ：路由  
+    |  |── module-one       ：	路由分包  
+    |── widget              ：业务组件  
+        |── UserInfo        ：	组件分包
+```
+ 
