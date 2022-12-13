@@ -24,4 +24,4 @@
     ├── router					---：路由
     │ └── module-one			---：	路由分包
     └── widget					---：业务组件
-        ├── UserInfo			---：	组件分宝
+        ├── UserInfo			---：	组件分包
